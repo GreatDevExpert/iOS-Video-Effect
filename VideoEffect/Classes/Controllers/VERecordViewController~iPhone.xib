@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VERecordViewController">
+            <connections>
+                <outlet property="previewView" destination="DqX-Rg-DGE" id="1sS-a9-0cK"/>
+                <outlet property="recordButton" destination="uem-fk-Jpp" id="HRt-sF-Qc9"/>
+                <outlet property="view" destination="1" id="Bhg-FF-gJG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2nd-Page_0020_dark-forest-full.png" id="CAL-Fw-gkW" userLabel="Image View - BG">
+                    <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3rd-Page_0009_example-photo.png" id="CD3-rs-NdY">
+                    <rect key="frame" x="44" y="11" width="480" height="298"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" id="DqX-Rg-DGE" userLabel="View - Camera" customClass="AVCamPreviewView">
+                    <rect key="frame" x="44" y="32" width="480" height="240"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="-9" maxX="0.0" maxY="-11"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3rd-Page_0002_top-border.png" id="F1J-oY-9JM">
+                    <rect key="frame" x="0.0" y="0.0" width="568" height="32"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3rd-Page_0001_zombie.png" id="ERQ-3d-SdY">
+                    <rect key="frame" x="146" y="0.0" width="77" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3rd-Page_0000_Fear-Effects.png" id="N3d-Cv-rvg">
+                    <rect key="frame" x="38" y="5" width="121" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3rd-Page_0008_bottom-border.png" id="f1V-wi-eHW">
+                    <rect key="frame" x="0.0" y="272" width="568" height="48"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="U4Q-2A-ieQ" userLabel="Button - Select">
+                    <rect key="frame" x="218" y="280" width="133" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <state key="normal" image="3rd-Page_0006_Select-Video-merged.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onSelectVideo:" destination="-1" eventType="touchUpInside" id="37n-oK-mZK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uem-fk-Jpp" userLabel="Button - Record">
+                    <rect key="frame" x="470" y="278" width="60" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <state key="normal" image="3rd-Page_0007_record-button.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="toggleMovieRecording:" destination="-1" eventType="touchUpInside" id="OW9-eo-d2b"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vNz-zl-qoJ" userLabel="Button - Back">
+                    <rect key="frame" x="38" y="278" width="95" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <state key="normal" image="3rd-Page_0005_BACK.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onBack:" destination="-1" eventType="touchUpInside" id="5Ij-Sw-hUc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="qaK-Fs-Wvd" appends="YES" id="XpP-Kd-dzx"/>
+            </connections>
+        </view>
+        <tapGestureRecognizer id="qaK-Fs-Wvd">
+            <connections>
+                <action selector="focusAndExposeTap:" destination="-1" id="MJs-D3-7F9"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="2nd-Page_0020_dark-forest-full.png" width="568" height="320"/>
+        <image name="3rd-Page_0000_Fear-Effects.png" width="121" height="22"/>
+        <image name="3rd-Page_0001_zombie.png" width="77" height="31"/>
+        <image name="3rd-Page_0002_top-border.png" width="568" height="32"/>
+        <image name="3rd-Page_0005_BACK.png" width="69" height="20"/>
+        <image name="3rd-Page_0006_Select-Video-merged.png" width="99" height="38"/>
+        <image name="3rd-Page_0007_record-button.png" width="32" height="32"/>
+        <image name="3rd-Page_0008_bottom-border.png" width="568" height="48"/>
+        <image name="3rd-Page_0009_example-photo.png" width="429" height="242"/>
+    </resources>
+</document>
